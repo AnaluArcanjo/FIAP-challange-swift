@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Swift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<footer>
+  <!-- 1. Barra laranja com a logo -->
+  <div class="footer-brand text-center py-3" style="background-color:#dc4405;">
+    <img src="../imgs/imgs_home/Rectangle 1.png" alt="Swift Logo" class="img-fluid" style="max-height: 40px;">
+  </div>
+
+  <!-- 2. Chips com os serviços -->
+  <div class="footer-services py-4">
+    <div class="container">
+      <div class="row text-center g-3">
+        <!-- WhatsApp -->
+        <div class="col-12 col-md-4">
+          <div class="service d-flex align-items-center justify-content-center gap-2">
+            <img src="../imgs/imgs_home/zap.png" alt="WhatsApp" style="height:30px;">
+            <div>
+              <strong>WhatsApp</strong><br>
+              <small>Compre pelo WhatsApp</small>
+            </div>
+          </div>
+        </div>
+        <!-- Televendas -->
+        <div class="col-12 col-md-4">
+          <div class="service d-flex align-items-center justify-content-center gap-2">
+            <img src="../imgs/imgs_home/fone.png" alt="Televendas" style="height:30px;">
+            <div>
+              <strong>Televendas</strong><br>
+              <small>Compre</small>
+            </div>
+          </div>
+        </div>
+        <!-- Swift na Empresa -->
+        <div class="col-12 col-md-4">
+          <div class="service d-flex align-items-center justify-content-center gap-2">
+            <img src="../imgs/imgs_home/icone-business 2.png" alt="Swift na sua empresa" style="height:30px;">
+            <div>
+              <strong>Swift na sua empresa</strong><br>
+              <small>Conheça</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Barra de frete -->
+  <div class="footer-shipping bg-light text-center py-2">
+    <div class="container d-flex align-items-center justify-content-center gap-2">
+      <img src="../imgs/imgs_home/truck.png" alt="Caminhão de entrega" style="height:25px;">
+      <span>Frete grátis a partir de R$ 359,00 nas modalidades de entrega agendada e entrega em 1 e 2 dias úteis.</span>
+    </div>
+  </div>
+  
+</footer>
+<div id="swiftCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicadores (bolinhas) -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#swiftCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#swiftCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#swiftCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#swiftCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/1200/400?random=4" class="d-block w-100" alt="Slide 4">
+    </div>
+  </div>
+
+  <!-- Controles (setas) -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#swiftCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#swiftCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+  <!-- Seção Nossa História -->
+  <section class="nossa-historia py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Texto -->
+        <div class="col-md-7">
+          <h2 class="fw-bold mb-4" style="color:#d84a17;">NOSSA HISTÓRIA</h2>
+          <p>
+            A Swift tem como propósito transformar globalmente a forma de comprar e consumir proteínas.
+            Um projeto inovador que começa pelo controle total da cadeia de suprimentos, desde a escolha da matéria prima,
+            passando pelo rigoroso controle de temperatura em nossa fábrica, transporte e lojas, garantindo o mais alto nível de
+            segurança do alimento, além de preservar todos os nutrientes.
+          </p>
+          <p>
+            São mais de 400 produtos, que incluem carne bovina para o dia a dia e churrasco, pescados com selos de sustentabilidade,
+            suínos, ovinos, aves, snacks, acompanhamentos, vegetais, sobremesas, temperos para churrasco, e muito mais.
+          </p>
+        </div>
+
+        <!-- Imagem -->
+        <div class="col-md-5 text-center">
+          <img src="../imgs/imgs_home/vaca.png" alt="Ilustração Swift" class="img-fluid" style="max-height: 350px;">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Cards -->
+  <section class="swift-cards py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <img src="../imgs/imgs_home/coffee-shop.png" alt="Ícone Loja" class="icon-white">
+            <p>
+              Com mais de 100 lojas no Estado de São Paulo, a Swift oferece garantia de qualidade,
+              atendimento especializado, ampla variedade de cortes e proteínas e preços imbatíveis.
+              Em cada unidade, você conta com uma experiência completa em carnes, alimentos prontos e itens selecionados.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <img src="../imgs/imgs_home/grocery-store.png" alt="Ícone Carrinho" class="icon-white">
+            <p>
+              Aqui você encontra toda a comodidade para escolher os produtos Swift e receber sem sair de casa,
+              podendo até agendar a data de entrega do seu pedido. Aproveite a nossa ampla variedade no site e no aplicativo,
+              com navegação fácil, promoções exclusivas e atendimento eficiente.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <img src="../imgs/imgs_home/delivery.png" alt="Ícone Caminhão" class="icon-white">
+            <p>
+              Você vai encontrar nossas lojas nos melhores supermercados. Aproveite a variedade, o atendimento especialista
+              e produtos de todas as categorias. No seu varejo favorito, conte com a praticidade, qualidade e os melhores preços Swift.
+              Tudo isso com a confiança da marca.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <img src="../imgs/imgs_home/television.png" alt="Ícone Computador" class="icon-white">
+            <p>
+              A Swift vai até você: nossas Vans oferecem variedade e comodidade no seu dia a dia,
+              seja no seu trabalho ou condomínio residencial. Além de oferecer qualidade, variedade e os melhores preços,
+              a loja móvel Swift conta com nosso atendimento personalizado.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Seção Final - Comprar pelo site/app -->
+<section class="swift-final py-5">
+  <div class="container">
+    <div class="row align-items-center bg-orange text-white rounded-4 p-4">
+      <!-- Texto -->
+      <div class="col-md-7">
+        <h3 class="fw-bold">Você pode comprar pelo site ou pelo app</h3>
+        <p>Aproveite e acompanhe nossas redes sociais</p>
+        <!-- Ícones sociais -->
+        <div class="social-icons d-flex align-items-center gap-4 mt-3">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none gap-2">
+            <img src="../imgs/imgs_home/insta.png" alt="Instagram" class="icon-social">
+            @lojaswift
+          </a>
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none gap-2">
+            <img src="../imgs/imgs_home/facebook.png" alt="Facebook" class="icon-social">
+            /lojaswift
+          </a>
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none gap-2">
+            <img src="../imgs/imgs_home/youtube.png" alt="YouTube" class="icon-social">
+            Loja Swift
+          </a>
+        </div>
+      </div>
+      <!-- Imagem do personagem -->
+      <div class="col-md-5 text-center">
+        <img src="../imgs/imgs_home/people.png" alt="Pessoa usando celular" class="img-fluid" style="max-height:250px;">
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

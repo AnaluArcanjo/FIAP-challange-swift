@@ -1,0 +1,131 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barra da logo */
+.footer-brand {
+  background-color: #dc4405; /* cor laranja da Swift */
+}
+
+/* Serviços (chips) */
+.footer-services .service {
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.footer-services .service:hover {
+  background-color: #e6e6e6;
+}
+
+.footer-services strong {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 2px; /* aproxima do subtítulo */
+  display: block;
+}
+
+.footer-services small {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0;
+  display: block;
+}
+
+/* Barra de frete */
+.footer-shipping {
+  background-color: #ececec;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Carrossel */
+#swiftCarousel {
+  max-width: 100%;
+  margin: 0 auto;
+}
+#swiftCarousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Seção de Cards Swift */
+.swift-cards .card {
+  background-color: #dc4405;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+  text-align: center;
+}
+
+.swift-cards .card img {
+  height: 60px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.swift-cards .card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.icon-white {
+  filter: brightness(0) invert(1);
+}
+/* ==== Seção Final (site/app + redes) ==== */
+.bg-orange { background-color: #dc4405; }
+.swift-final { padding-top: 2rem; padding-bottom: 2rem; }
+.swift-final h3 { font-size: 1.8rem; line-height: 1.2; }
+.swift-final p { margin-bottom: .5rem; }
+.icon-social { height: 24px; filter: brightness(0) invert(1); display: inline-block; }
+/* ===== Responsividade Mobile ===== */
+@media (max-width: 768px) {
+  /* Ajusta altura do carrossel em telas menores */
+  #swiftCarousel img {
+    height: 200px;
+  }
+
+  /* Ajusta texto da seção Nossa História */
+  .nossa-historia h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .nossa-historia p {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .nossa-historia img {
+    max-height: 220px;
+    margin-top: 1rem;
+  }
+
+  /* Cards empilhados no mobile */
+  .swift-cards .card {
+    padding: 15px;
+  }
+  .swift-cards .card p {
+    font-size: 0.85rem;
+  }
+
+  /* Seção final - texto centralizado no mobile */
+  .swift-final .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .swift-final h3 {
+    font-size: 1.4rem;
+  }
+  .swift-final p {
+    font-size: 0.9rem;
+  }
+  .swift-final .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .swift-final img {
+    margin-bottom: 1rem;
+  }
+}

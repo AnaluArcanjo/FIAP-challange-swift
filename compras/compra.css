@@ -1,0 +1,234 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header-swift {
+  background-color: #dc4405;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.header-swift .logo-center img {
+  max-height: 40px;
+}
+
+.btn-voltar {
+  position: absolute;
+  left: 20px;
+  padding: 8px 18px;
+  background-color: #fff;
+  color: #dc4405;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-voltar:hover {
+  background-color: #ff5c00;
+  color: #fff;
+}
+
+.botoes-compras {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 50px 0 40px 0;
+  flex-wrap: wrap;
+}
+
+.botao-compra {
+  background-color: #DC4405;
+  width: 220px;
+  height: 180px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-compra img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.botao-compra span {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.botao-compra:hover {
+  background-color: #FF5C00;
+  transform: scale(1.05);
+}
+
+.btn-explorar {
+  background: linear-gradient(45deg, #dc4405, #ff7f36);
+  border: none;
+  padding: 12px 30px;
+  color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.btn-explorar:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff5c00, #d66433);
+}
+
+.kits-destaque {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.titulo-secao {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #dc4405;
+}
+
+.kit-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.kit-card:hover {
+  transform: scale(1.05);
+}
+
+.kit-card img {
+  border-bottom: 4px solid #dc4405;
+}
+
+.entregas {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cards-entregas {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.card-entrega {
+  background-color: #DC4405;
+  color: white;
+  border-radius: 15px;
+  width: 250px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card-entrega:hover {
+  transform: translateY(-5px);
+}
+
+.card-entrega img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.bolha-navbar {
+  position: fixed;
+  bottom: 20px;               
+  left: 50%;                 
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.estetica-navbar {
+  background-color: #DC4405;
+  border-radius: 30px;
+  width: 80vh;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-image: linear-gradient(45deg, #DC4405, #FF5C00 );
+}
+
+.estetica-navbar a {
+    text-align: center;
+    position: relative;
+}
+
+.estetica-navbar a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s ease-in-out;
+}
+
+.estetica-navbar a:hover::after,
+.estetica-navbar a.active::after {
+    width: 100%;
+}
+
+.rodape {
+  background: linear-gradient(45deg, #dc4405, #ff5c00);
+  padding: 30px 20px;
+  color: white;
+  margin-top: 50px;
+}
+
+.rodape p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.rodape small {
+  display: block;
+  margin-top: 8px;
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 576px) {
+  .estetica-navbar{
+      border-radius: 30px;
+      width: 40vh;
+      display: flex;
+      gap: 15px;
+  }
+  .btn-voltar {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header-swift {
+  background-color: #dc4405;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.header-swift .logo-center img {
+  max-height: 40px;
+}
+
+.btn-voltar {
+  position: absolute;
+  left: 20px;
+  padding: 8px 18px;
+  background-color: #fff;
+  color: #dc4405;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-voltar:hover {
+  background-color: #ff5c00;
+  color: #fff;
+}
+
+.container-kits {
+  padding: 80px 20px 20px 20px; 
+}
+
+.titulo-pagina {
+  text-align: center;
+  margin: 20px 0;
+  color: #DC4405;
+  font-weight: bold;
+}
+
+.cards-kits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-kit {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card-kit:hover {
+  transform: scale(1.03);
+}
+
+.card-kit img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.card-kit h3 {
+  margin: 10px 0;
+  color: #DC4405;
+}
+
+.card-kit p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-comprar {
+  background-color: #DC4405;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #FF5C00;
+}
+
+.bolha-navbar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.estetica-navbar {
+  background-color: #DC4405;
+  border-radius: 30px;
+  width: 80vh;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-image: linear-gradient(45deg, #DC4405, #FF5C00);
+}
+
+.estetica-navbar a {
+  text-align: center;
+  position: relative;
+}
+
+.estetica-navbar a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s ease-in-out;
+}
+
+.estetica-navbar a:hover::after,
+.estetica-navbar a.active::after {
+  width: 100%;
+}
+
+
+/* Rodapé */
+.rodape {
+  background: linear-gradient(45deg, #dc4405, #ff5c00);
+  padding: 30px 20px;
+  color: white;
+  margin-top: 50px;
+}
+
+.rodape p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.rodape small {
+  display: block;
+  margin-top: 8px;
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .estetica-navbar {
+    width: 60vh;
+    gap: 20px;
+  }
+
+  .estetica-navbar a {
+    font-size: 0.9rem;
+  }
+}
