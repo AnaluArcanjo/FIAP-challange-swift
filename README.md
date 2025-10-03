@@ -64,3 +64,4 @@ Antes de investir totalmente nos armários inteligentes, um **MVP (Produto Míni
 * ANA LUIZA (RM: 562568) 
 * JULIA (RM: 565591) 
 * ARTUR (RM: 565481) 
+ 
