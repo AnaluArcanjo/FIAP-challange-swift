@@ -1,56 +1,71 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/* so pra dar rolagem para tela  */
 .container-principal {
-  height: 150vh; 
-
+    height: 150vh; 
 }
 
-/* cabeçalho (INICIO) */
-.estetica-cabecalho{
-
-  background-color: #DC4405;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.estetica-cabecalho {
+    background-color: #DC4405;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .estetica-cabecalho .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* cabeçalho (FIM) */
 
 /* bolha navbar (INICIO) */
+.scrollBolha{
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+.scrollBolha.showBolha{
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+}
+
 
 .bolha-navbar {
-  position: fixed;
-  bottom: 20px;               
-  left: 50%;                 
-  transform: translateX(-50%);
-  z-index: 1000;
+    position: fixed;
+    bottom: 20px;            
+    left: 50%;              
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.show{
+  opacity:1;
+  filter: blur(0px);
+  transition: all 1s;
+  transform: translateX(0);
 }
 
 .estetica-navbar {
-  background-color: #DC4405 ;
-  border-radius: 30px;
-  width: 80vh;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  background-image: linear-gradient(45deg, #DC4405, #FF5C00 );
-  
-  
-  
-
+    background-color: #DC4405 ;
+    border-radius: 30px;
+    width: 80vh;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-image: linear-gradient(45deg, #DC4405, #FF5C00 );
 }
 
 .estetica-navbar a {
@@ -87,13 +102,76 @@
 /* bolha navba (FIM) */
 
 /* Rodape (INICIO) */
-
 .rodape{
-  
-  background-color: #DC4405;
-  width: 100%;
-  height: 40vh;
+    background-color: #DC4405;
+    width: 100%;
+    height: 40vh;
+}
+/* Rodape (FIM) */
 
+@media (min-width: 768px) {
+    .menu-perfil {
+        max-width: 700px; 
+        width: 100%;
+    }
 }
 
-/* Rodape (FIM) */
+.custom-icon-circle {
+    background-color: #DC4405; 
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.custom-icon-circle .bi-person-fill {
+    font-size: 2.2rem !important; 
+}
+
+.custom-header-bg {
+    background-color: #f0f0f0 !important; 
+    border-top-left-radius: 0.25rem; 
+    border-top-right-radius: 0.25rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 1.5rem !important; 
+    padding-bottom: 1.5rem !important; 
+}
+
+.custom-header-bg:hover {
+    background-color: #f0f0f0 !important; 
+}
+
+.custom-text-color {
+    color: #343a40; 
+    font-size: 1.1rem; 
+}
+
+.custom-text-color-light {
+    color: #6c757d; 
+    font-size: 0.9rem; 
+}
+
+.list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-color: #e9ecef;
+    padding-top: 1rem !important; 
+    padding-bottom: 1rem !important; 
+}
+
+.list-group-item span {
+    font-size: 1.05rem; 
+    font-weight: bold;
+}
+
+.list-group-item i.bi {
+    color: #343a40; 
+    font-size: 1.5rem; 
+}
+
+.list-group-flush .list-group-item:nth-child(2) {
+    border-top: 0;
+}
