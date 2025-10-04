@@ -13,8 +13,6 @@ const elements = document.querySelectorAll('.hidden');
 
 elements.forEach((element) => myObserver.observe(element))
 
-
-
 const docElement = document.documentElement;
 const scrollBolha = document.querySelector('.scrollBolha')
 

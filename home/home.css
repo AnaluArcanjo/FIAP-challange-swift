@@ -28,9 +28,7 @@ section {
   font-style: italic;
 }
 
-
 /* CABEÇALHO (INICIO) */
-
 .estetica-cabecalho{
   background-color: #DC4405;
   display: flex;
@@ -43,18 +41,18 @@ section {
       background-color: #DC4405;
       display: flex;
       justify-content: center;
-      
-    
- 
 }
 }
 
 .bolha-navbar {
   position: fixed;
   bottom: 20px;               
-  left: 50%;                 
+  left: 50%;                  
   transform: translateX(-50%);
   z-index: 1000;
+  width: 90%; 
+  max-width: 400px; 
+  transition: all 0.3s ease-in-out;
 }
 
 .scrollBolha{
@@ -78,10 +76,6 @@ section {
   align-items: center;
   gap: 60px;
   background-image: linear-gradient(45deg, #DC4405, #FF5C00 );
-  
-  
-  
-
 }
 
 .estetica-navbar a {
@@ -106,14 +100,20 @@ section {
 }
 
 @media (max-width: 576px) {
-    .estetica-navbar{
-        background-color: #DC4405 ;
-        border-radius: 30px;
-        width: 40vh;
-        display: flex;
-        gap: 15px;
-    }
+  .bolha-navbar {
+    width: 85%;  
+    left: 50%;  
+    transform: translateX(-50%); 
+  }
+
+  .estetica-navbar {
+    width: 100%;  
+    border-radius: 30px;
+    height: 55px;
+    gap: 10px;
+  }
 }
+
 /* CABEÇALHO (FIM) */
 
 @media (min-width: 992px) {
@@ -131,7 +131,6 @@ section {
     }
 }
 
-
 .container-historia{
   display: flex;
   justify-content: space-around;
@@ -142,6 +141,7 @@ section {
     display: flex;
     flex-direction: column;
   }
+  
   .historia{
   background-color: #DC4405;
   width: 100%;
@@ -150,9 +150,8 @@ section {
   }
 
   .img-historia{
- 
-  padding: 15% 15% 15% 20%;
-}
+    padding: 15% 15% 15% 20%;
+  }
 }
 
 .historia{
@@ -184,7 +183,6 @@ section {
   margin-top: 15%;
   padding: 4% 0% 10% 0%;
 }
-
 
 @media (max-width: 576px) {
     .img_sobre{

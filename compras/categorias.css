@@ -5,7 +5,6 @@ body {
   padding: 0;
 }
 
-/* Cabeçalho fixo */
 .header-swift {
   background-color: #dc4405;
   position: sticky;
@@ -37,7 +36,6 @@ body {
   color: #fff;
 }
 
-/* Categorias */
 .titulo-secao {
   font-weight: bold;
   font-size: 1.6rem;
@@ -69,48 +67,48 @@ body {
   background-color: #ff5c00;
 }
 
+/* Bolha Navbar */
 .bolha-navbar {
   position: fixed;
-  bottom: 20px;               
-  left: 50%;                 
-  transform: translateX(-50%);
-  z-index: 1000;
+  bottom: 20px;  
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 1000; 
 }
 
 .estetica-navbar {
   background-color: #DC4405;
   border-radius: 30px;
-  width: 80vh;
+  width: 80vh; 
   height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
-  background-image: linear-gradient(45deg, #DC4405, #FF5C00 );
+  background-image: linear-gradient(45deg, #DC4405, #FF5C00);
 }
 
 .estetica-navbar a {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
 .estetica-navbar a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.2s ease-in-out;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s ease-in-out;
 }
 
 .estetica-navbar a:hover::after,
 .estetica-navbar a.active::after {
-    width: 100%;
+  width: 100%;
 }
 
-/* Rodapé */
 .rodape {
   background: linear-gradient(45deg, #dc4405, #ff5c00);
   padding: 30px 20px;
@@ -131,15 +129,33 @@ body {
 }
 
 /* RESPONSIVO */
-@media (max-width: 576px) {
-  .estetica-navbar{
-      border-radius: 30px;
-      width: 40vh;
-      display: flex;
-      gap: 15px;
-  }
-  .btn-voltar {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+@media (max-width: 768px) {
+  .estetica-navbar {
+    width: 70vw; 
+    gap: 40px;   /
   }
 }
+
+@media (max-width: 576px) {
+  .estetica-navbar {
+    width: 85vw; 
+    gap: 20px;   
+  }
+
+  .estetica-navbar a {
+    font-size: 1rem;
+  }
+
+  .estetica-navbar img {
+    width: 25px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-voltar {
+    font-size: 0.7rem;        
+    padding: 1px 3px;        
+    left: 3px;              
+  }
+}
+
